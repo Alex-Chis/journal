@@ -1,1 +1,1 @@
-# journal
+# Journal app made in js
