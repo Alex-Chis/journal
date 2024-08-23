@@ -10,27 +10,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
       <div class="container">
-        <p class="logo">axd</p>
         <h1>Journal App</h1>
         <div>
-          <label for="name">Name</label>
-          <input id="name" placeholder="Enter your name" type="text" />
+          <label for="title">Title</label>
+          <input id="title" placeholder="Title" type="text" />
         </div>
 
         <div>
-          <label for="password">Password</label>
-          <input
-            id="password"
-            placeholder="Enter your password"
-            type="password"
-          />
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            placeholder="Enter your description"
+            type="text"
+          ></textarea>
         </div>
-        <button type="button" id="login">Login</button>
+        <button id="addNote">Add note</button>
+      </div>
+      <div class="notes">
+        <h2>Notes</h2>
       </div>
     </main>
     <script src="main.js"></script>

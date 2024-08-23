@@ -10,16 +10,16 @@
   box-sizing: border-box;
 }
 /*
-    2. Remove default margin
-  */
+      2. Remove default margin
+    */
 * {
   margin: 0;
 }
 /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
+      Typographic tweaks!
+      3. Add accessible line-height
+      4. Improve text rendering
+    */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -27,8 +27,8 @@ body {
   background-color: var(--main-bg-color);
 }
 /*
-    5. Improve media defaults
-  */
+      5. Improve media defaults
+    */
 img,
 picture,
 video,
@@ -38,8 +38,8 @@ svg {
   max-width: 100%;
 }
 /*
-    6. Remove built-in form typography styles
-  */
+      6. Remove built-in form typography styles
+    */
 input,
 button,
 textarea,
@@ -47,8 +47,8 @@ select {
   font: inherit;
 }
 /*
-    7. Avoid text overflows
-  */
+      7. Avoid text overflows
+    */
 p,
 h1,
 h2,
@@ -65,7 +65,6 @@ main {
 }
 
 .container {
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,19 +73,14 @@ main {
   color: var(--text-color);
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: var(--main-color);
-  font-weight: 500;
-}
-
 h1 {
   color: var(--main-color);
   font-weight: 900;
   font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
-#login {
+#addNote {
   margin-top: 2rem;
   min-width: 250px;
   background-color: var(--main-color);
@@ -100,7 +94,8 @@ h1 {
   border-radius: 15px;
 }
 
-input {
+input,
+textarea {
   min-width: 250px;
   background: transparent;
   border: 1px solid white;
@@ -116,7 +111,7 @@ label {
   z-index: 2;
 }
 
-label[for="name"] {
+label[for="title"] {
   width: fit-content;
   background-color: var(--main-bg-color);
   bottom: -12px;
@@ -124,10 +119,34 @@ label[for="name"] {
   padding-inline: 2px;
 }
 
-label[for="password"] {
+label[for="description"] {
   width: fit-content;
   background-color: var(--main-bg-color);
-  bottom: -12px;
   left: 15px;
+  bottom: -12px;
   padding-inline: 2px;
+}
+
+textarea {
+  min-height: 250px;
+}
+
+.notes {
+  margin-top: 2rem;
+  display: flex;
+  color: var(--text-color);
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notes div {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--main-color);
+  font-size: small;
+  background-color: var(--text-color);
 }
