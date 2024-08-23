@@ -21,7 +21,7 @@ function check(names, passwords) {
   const name = document.getElementById("name").value;
   const password = document.getElementById("password").value;
   if (names.includes(name) && passwords.includes(password)) {
-    const pageUrl = "journal/app/index.html";
+    const pageUrl = "app/index.html";
     const params = new URLSearchParams({
       param1: name,
     });
